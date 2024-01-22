@@ -1,0 +1,170 @@
+.content {
+  &__body {
+    display: flex;
+    gap: 5rem;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}
+
+
+
+.display {
+  flex: 0 0 75%;
+
+  &__container {
+    width: 100%;
+    &-img {
+      width: 100%;
+    }
+  }
+
+  &__box {
+    margin-top: 3rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 6rem;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+
+  &__heading {
+    color: var(--color-dark-blue);
+    font-size: 7rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__content p {
+    font-size: 1.5rem;
+    color: var(--color-dark-grayish-blue);
+  }
+}
+
+.news {
+  flex: 1;
+  background-color: var(--color-dark-blue);
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media only screen and (max-width: $bp-small) {
+    gap: 5rem;
+  }
+  &__heading {
+    color: var(--color-orange);
+    font-size: 3rem;
+  }
+
+  &__content {
+    border-bottom: 1px solid var(--color-grayish-blue);
+    &-heading {
+      cursor: pointer;
+      color: var(--color-off-white);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 3rem;
+      }
+
+      &:hover {
+        color: var(--color-orange);
+      }
+    }
+
+    &-text {
+      color: var(--color-grayish-blue);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.newsLetter {
+  margin-top: 5rem;
+  display: flex;
+  gap: 3rem;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+  &__parent {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__figure {
+    height: 15rem;
+    &-img {
+      height: 100%;
+    }
+  }
+
+  &__content {
+    &-number {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--color-grayish-blue);
+      @media only screen and (max-width: $bp-small) {
+        font-size: 4rem;
+      }
+    }
+
+    &-heading {
+      cursor: pointer;
+      font-size: 2rem;
+      font-weight: 700;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 3rem;
+      }
+
+      &:hover {
+        color: var(--color-orange);
+      }
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      color: var(--color-grayish-blue);
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.btn {
+  &__display {
+    cursor: pointer;
+    border: none;
+    width: 30%;
+    padding: 1.5rem;
+    background-color: var(--color-red);
+    color: var(--color-off-white);
+
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: var(--color-dark-blue);
+    }
+  }
+}
